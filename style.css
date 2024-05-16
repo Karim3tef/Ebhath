@@ -1354,6 +1354,42 @@ textarea
     transition: .3s;
 }
 
+.plain {
+	color: #333;
+    cursor: default;
+}
+
+nav .plain:hover {
+	text-decoration: none;
+	color: #333;
+}
+
+li.nav-item a.plain::after
+{
+	position: absolute;
+	left: 0;
+	bottom: -5px;
+	width: 0%;
+	height: 2px;
+	background-color: #333;
+	content: '';
+	transition:all 0.5s ease;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+}
+
+li.nav-item.active a.plain::after
+{
+	width: 100%;
+}
+
+li.nav-item a.plain:hover::after
+{
+	width: 100%;
+}
+
+	
 
 footer
 {
