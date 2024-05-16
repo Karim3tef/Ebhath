@@ -1393,7 +1393,7 @@ li.nav-item a.plain:hover::after
 
 footer
 {
-	height: 40px;
+	height: auto;
 	line-height: 40px;
 	width: 100%;
 	color: #fff;
