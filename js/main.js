@@ -1,7 +1,7 @@
 var doc = jQuery(document);
 
-$(window).on("load",function(){
-	$('.loader').fadeOut(500);
+$(window).on('load',function(){
+	$(".loader").fadeOut(1000);
 });
 
 doc.ready(function(){
@@ -9,6 +9,8 @@ doc.ready(function(){
 	"use strict";
 
 	$(window).scrollTop(0);
+
+	
 
 	var typed = new Typed(".mytext", {
 		strings: ["Ebhath", "Research Organization","Non-Profit Organization"],
@@ -27,10 +29,26 @@ doc.ready(function(){
 		$('.navbar-nav').addClass('navbar-nav-bg');
 	}
 
+	$('.service-description').counterUp({delay:10,time:1200});
+
 	$(window).scroll(function(){
 
 		var top = $(window).scrollTop();
-
+		
+		if(top>=200)
+			{
+				$('header').addClass('header-layer');
+				$('.navbar-nav').removeClass('navbar-nav-bg');
+			}
+	
+			else if($('header').hasClass('header-layer'))
+			{
+				$('header').removeClass('header-layer');
+			}
+			else
+			{
+				$('.navbar-nav').addClass('navbar-nav-bg');
+			}
 	});
 
 	$('.progress-content .skill-progress').each(function(){
@@ -88,7 +106,7 @@ doc.ready(function(){
 	 });
 
 	 $(".ourteam").owlCarousel({
-		items:5,
+		items:2,
 		autoplay:true,
 		rewind:true
 	 });
