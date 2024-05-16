@@ -6,10 +6,6 @@
 		text-align: center;
 	}
 
-	.navbar-nav-bg
-	{
-		background-color: rgba(0,0,0,0.7);
-	}
 
 	.services-content .row .col-lg-4
 	{
@@ -21,14 +17,33 @@
 		margin-top: 0;
 	}
 
-	.main .type
-	{
-		font-size: 40px;
-	}
-
 	.post-image
 	{
 		height: 400px;
+	}
+	.main-content {
+		width: 600px;
+		height: 300px;
+		padding: 25px;
+	}
+	.main .type {
+		font-size: 44px;
+
+	}
+	.main .Do-research {
+		font-size: 40px;
+	}
+	.cta {
+		width: 205px;
+	}
+	.service-single .service-name {
+		font-size: 17px;
+	}
+	.about .find-img {
+		left: -50px;
+	}
+	.blog .blog-block  {
+		margin-bottom: 25px;
 	}
 }
 
@@ -48,6 +63,28 @@
 	{
 		height: 350px;
 	}
+	.main-content {
+		position: relative;
+		border-radius: 120px 0;
+		width: 450px;
+		height: 350px;
+	}
+	.Ebhath-content {
+		text-align: center;
+	}
+	.main .type {
+		font-size: 35px;
+
+	}
+	.main .Do-research {
+		font-size: 30px;
+	}
+	.cta {
+		width: 180px;
+	}
+
+
+	
 }
 
 @media screen and (max-width: 600px){
@@ -57,10 +94,21 @@
 	}
 }
 
+@media screen and (max-width: 575px){
+	.service-single
+	{
+		margin-bottom: 25px;
+	}
+
+}
+
 @media screen and (max-width: 500px){
 	.main .type
 	{
-		font-size: 24px;
+		font-size: 25px;
+	}
+	.main .Do-research {
+		font-size: 20px;
 	}
 }
 
