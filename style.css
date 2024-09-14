@@ -17,6 +17,7 @@ body
 	color: #777;
 	line-height: 1.5;
 	font-family: 'Cairo';
+	background-color: #dff3ff;
 }
 
 /* Scrollbar styles */
@@ -498,7 +499,7 @@ button:focus
 /** about styles **/
 .about {
 	z-index: 5000;
-	background-color: #dff3ff;
+	background-color: #fff;
 }
 
 
