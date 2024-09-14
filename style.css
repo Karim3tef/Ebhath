@@ -1268,6 +1268,7 @@ ul.filter li.filter-active
 {
 	border:1px solid #ddd;
 	border-radius: 15px;
+	background-color: #fff;
 }
 
 .blog-content:hover .post-image img
