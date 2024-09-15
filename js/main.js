@@ -1,7 +1,7 @@
 var doc = jQuery(document);
 
 $(window).on('load',function(){
-	$(".loader").fadeOut(1000);
+	$(".loader").fadeOut(500);
 });
 
 doc.ready(function(){
